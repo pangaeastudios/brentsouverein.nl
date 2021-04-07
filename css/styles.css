@@ -1,0 +1,120 @@
+@font-face {
+  font-family: "Franklin Gothic Medium";
+  src: url("../fonts/Franklin-Gothic-Medium-Regular.woff");
+  /* Change link to WP media upload */
+  font-weight: normal;
+}
+
+body {
+  margin: 0;
+}
+
+.body-home {
+  background-image: url("../images/Website background.jpg");
+  /* Change link to WP media upload */
+}
+
+.body-shop {
+  background-color: white;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-item {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#header-logo {
+  max-width: 350px;
+}
+
+#header-slogan {
+  max-width: 350px;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-evenly;
+  font-family: "Franklin Gothic Medium";
+  font-size: xx-large;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5%;
+}
+
+.nav-link {
+  font-family: "Franklin Gothic Medium";
+  font-size: 96px;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+  padding-left: 50px;
+}
+
+.nav-link:hover {
+  color: black;
+}
+
+.main-grid {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.grid-item {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.item-square {
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.grid-item .item-square {
+  padding: 10px;
+}
+
+.grid-image {
+  transition: 0.5s;
+}
+
+.item-square .grid-image img {
+  /* position: relative;
+    top: 100%;
+    left: 0%;
+    transform: translate(-50%, -50%); */
+  max-width: 100%;
+}
+
+.grid-item:hover .grid-image {
+  opacity: 40%;
+}
+
+.grid-item:hover .grid-item-title {
+  opacity: 1;
+}
+
+.grid-item-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  color: white;
+  font-family: "Franklin Gothic Medium";
+  font-size: xx-large;
+  transition: 0.5s;
+}
