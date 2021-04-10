@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+.body-default {
+  background-color: grey;
+}
+
 .body-home {
   background-image: url("../images/Website background.jpg");
   /* Change link to WP media upload */
@@ -32,11 +36,43 @@ body {
 }
 
 #header-logo {
-  max-width: 350px;
+  max-width: 300px;
 }
 
 #header-slogan {
   max-width: 350px;
+}
+
+.content {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10%;
+}
+
+.img-placeholder {
+  width: 500px;
+  height: 600px;
+  background-color: black;
+  transition: 0.3s;
+}
+
+.brent-image-hover:hover .img-placeholder {
+  transform: scale(1.05);
+}
+
+.brent-image-hover:hover .brent-title {
+  transform: translateY(30px);
+  color: white;
+}
+
+.brent-text {
+  font-family: "Franklin Gothic Medium";
+  font-size: x-large;
 }
 
 .page-title {
@@ -50,6 +86,30 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 5%;
+}
+
+.brent-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-family: "Franklin Gothic Medium";
+  font-size: 80px;
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.img-caption {
+  font-family: "Franklin Gothic Medium";
+  font-size: large;
+}
+
+.flex-align-left {
+  justify-content: start;
+}
+
+.title-m {
+  font-size: 55px;
 }
 
 .nav-link {
@@ -101,6 +161,14 @@ body {
 
 .grid-item:hover .grid-image {
   opacity: 40%;
+}
+
+.grid-item img {
+  transition: 0.5s;
+}
+
+.grid-item:hover img {
+  transform: scale(1.1);
 }
 
 .grid-item:hover .grid-item-title {
